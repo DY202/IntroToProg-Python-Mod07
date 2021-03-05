@@ -26,7 +26,8 @@ staticmethod()	This function creates a static method from a function.
 Import__()	is an advanced function called by ‘import’. 
 To use these built in functions, we have only to call them and pass the relevant argument
 
-# User Defined Functions: Instead of relying on built-in functions, Python programming language allows us to create our own functions called as user defined functions. For example, if we want to implement some mathematical calculations, then put them in separate functions with the correct function name. Then we can call that function multiple times.
+# User Defined Functions 
+Instead of relying on built-in functions, Python programming language allows us to create our own functions called as user defined functions. For example, if we want to implement some mathematical calculations, then put them in separate functions with the correct function name. Then we can call that function multiple times.
 
 
 # Table 1: File vs Binary File – Difference between Text File and Binary File
@@ -50,8 +51,10 @@ Binary File opened using Notepad
 
 # Pickling and Unpickling
 Python provides pickle modules for Serialization and de-Serialization of python objects like lists, dictionaries, tuples, etc. Pickling is also called marshaling or flattening in other languages. Pickling is used to store python objects.
-## Serialization or Pickling: Pickling or Serialization is the process of converting a Python object (lists, dict, tuples, etc) into byte streams that can be saved to disks or can be transferred over a network.
-## De-serialization or un pickling: The byte streams saved on file contains the necessary information to reconstruct the original python object. The process of converting byte streams back to python objects is called de-serialization.
+## Serialization or Pickling: 
+Pickling or Serialization is the process of converting a Python object (lists, dict, tuples, etc) into byte streams that can be saved to disks or can be transferred over a network.
+## De-serialization or un pickling: 
+The byte streams saved on file contains the necessary information to reconstruct the original python object. The process of converting byte streams back to python objects is called de-serialization.
 
 # What is Exception?
 "Exception" is a built-in python class used to hold information about an error. Python automatically creates an Exception object when an error occurs. The Exception object automatically fills with information about the error that caused the exception. In general, when a Python script encounters a situation that it cannot cope with, it raises an exception. An exception is a Python object that represents an error.
@@ -90,22 +93,22 @@ else:
 An exception can be a string, a class or an object. Most of the exceptions that the Python core raises are classes, with an argument that is an instance of the class.
 Example
 Following is an example for a single exception −
-# Define a function here #
+
 def temp_convert(var):
 try:
      return int(var)
 except ValueError, Argument:
       print "The argument does not contain numbers\n", Argument
 
-# Call above function here #
+
 temp_convert("xyz");
 This produces the following result −
 
 The argument does not contain numbers
 invalid literal for int() with base 10: 'xyz'
 
-**"Common base class for all non-exit exceptions." 
-This message comes from the Exception class's docstring. It tells that the Exception class is a "base" class that can be used to create "derived" classes. Derived classes "inherit" data and functions from the base class that can be replaced and customized.** 
+# "Common base class for all non-exit exceptions." 
+This message comes from the Exception class's docstring. It tells that the Exception class is a "base" class that can be used to create "derived" classes. Derived classes "inherit" data and functions from the base class that can be replaced and customized.
 
 This script shows two classes that derive code from the Exception class and replace the"__str__()" functionwith a custom message.
 class CustomError(Exception):
@@ -131,9 +134,11 @@ except Exception as e:
 print("There was a non-specific error!")
 print("Built-In Python error info: ")
 print(e, e.__doc__, type(e), sep='\n')
-**In Python, users can define custom exceptions by creating a new class. This exception class has to be derived, either directly or indirectly, from the built-in Exception class. 
-Two exceptions (ValueTooSmallError and ValueTooLargeError) that are actually raised by the program (below) are derived from a base class called Error, this is the standard way to define user-defined exceptions in Python programming**
+In Python, users can define custom exceptions by creating a new class. This exception class has to be derived, either directly or indirectly, from the built-in Exception class. 
+Two exceptions (ValueTooSmallError and ValueTooLargeError) that are actually raised by the program (below) are derived from a base class called Error, this is the standard way to define user-defined exceptions in Python programming.
+
 ![image](https://user-images.githubusercontent.com/79126969/110101695-c0319100-7d58-11eb-8c20-8dceda698ae8.png)
+
 Source: How to Define Custom Exceptions in Python? (With Examples) (programiz.com)
 
 # What is the Markdown language?
@@ -235,6 +240,7 @@ GitHub supports emoji!
 # Description: A simple example of storing data in a binary file
 
 ![image](https://user-images.githubusercontent.com/79126969/110102118-3afaac00-7d59-11eb-8bb4-58bb6c77c75b.png)
+
 As the script will store data in a binary file, we ‘import pickle’ at the start.
 Pickling will convert the python object(list) into a byte stream.
 Declaring variables and Data 
@@ -246,44 +252,55 @@ objFile = “AppData.data”
 objFileData = []
 
 ![image](https://user-images.githubusercontent.com/79126969/110102202-55348a00-7d59-11eb-86c7-8a1376f78082.png)
+
 lstHeader for the lstTable with two values, and printing values using subscript.
 first lstRow of data to be included in the lstTable, again printed using subscript or index placeholder.
 
 ![image](https://user-images.githubusercontent.com/79126969/110102234-5f568880-7d59-11eb-8007-b0e3cb2e8d7c.png)
+
 def display_current_data with one parameter lstTable, append lstHeader and each lstRow to lstTable and print lstTable
 
 ![image](https://user-images.githubusercontent.com/79126969/110102296-78f7d000-7d59-11eb-9417-37fe82a3542c.png)
+
 Image 1: Output for def display_current_data(lstTable)
 
 ![image](https://user-images.githubusercontent.com/79126969/110102337-857c2880-7d59-11eb-9035-342dfd7b354b.png)
+
 The first function used in processing, to save data to a text file,’AppData.txt’, with two parameters, ‘lstTable’ and ‘file’.
 After opening a file, for each lstRow in the lstTable, write each value in the lstRow based on index position, into the file. Close the file and return lstTable as a variable.
 
 
 ![image](https://user-images.githubusercontent.com/79126969/110102385-9462db00-7d59-11eb-816c-f52a91e7000e.png)
+
 Image 2: Output for def save_data_to_file(lstTable, file)
 
 ![image](https://user-images.githubusercontent.com/79126969/110102444-a3e22400-7d59-11eb-86a8-cf46dd4bf2ac.png)
+
 Image 3; Data saved in the text file ‘AppData.txt’
 
 ![image](https://user-images.githubusercontent.com/79126969/110102481-b2304000-7d59-11eb-8e67-841ddb3c0efe.png)
+
 def read_data_from_file(file, lstTable) opens the text file. File Data, on reading lines, for each line in file, print into a list Row, value at [0] first, followed by value at [1].
 Print all file data in lstRows and close the file.
 
 
 ![image](https://user-images.githubusercontent.com/79126969/110102520-beb49880-7d59-11eb-93bf-d9eca8edb4c2.png)
+
 Image 4: Output for def read_data_from_file(file,lstTable)
 
 
 ![image](https://user-images.githubusercontent.com/79126969/110102567-cc6a1e00-7d59-11eb-91f2-d6cdcd18fa36.png)
+
 Function def add_new_data with two parameters, strID and strName obtains user input for an ID followed by a Name. The input is displayed in a lstRow and the lstRow appended to the lstTable to print.
 
 
 ![image](https://user-images.githubusercontent.com/79126969/110102667-ec99dd00-7d59-11eb-9355-97a5f0f097d9.png)
+
 Image 5: Output for def add_new_data(strID, strName)
 
 
 ![image](https://user-images.githubusercontent.com/79126969/110102716-f91e3580-7d59-11eb-9f82-b57d3d12f16b.png)
+
 Tried to incorporate structure error handling for user input to enter new data
 try: for user input, but if user input equals or is lesser than zero, raise a ValueError subclass.
 except: for ValueError, accept user input.
@@ -292,7 +309,9 @@ But for now, used individual statements to let the user know symbols are not all
 
 
 ![image](https://user-images.githubusercontent.com/79126969/110102763-076c5180-7d5a-11eb-8d25-9a983924021b.png)
+
 ![image](https://user-images.githubusercontent.com/79126969/110102785-0dfac900-7d5a-11eb-9dc3-8ba582aecbbe.png)
+
 Image 6 & 7: Output for error handling, if a zero is entered as strID or a symbol included in strName.
 Would need to work a little more on the script, so either Enter an ID or Enter a Name is not printed twice when the other is entered incorrectly.
 
@@ -303,20 +322,25 @@ After opening an objFile ‘AppData.data’, mark ‘ab’ to append/write binar
 
 
 ![image](https://user-images.githubusercontent.com/79126969/110102882-266ae380-7d5a-11eb-89f7-d349cdea5a16.png)
+
 ![image](https://user-images.githubusercontent.com/79126969/110102908-2bc82e00-7d5a-11eb-85b6-1dc649e543bc.png)
+
 Image 8 & 9: Output for def save_data_to_binary_file
 
 
 ![image](https://user-images.githubusercontent.com/79126969/110102958-3a164a00-7d5a-11eb-82cb-ca6f5a565fd7.png)
+
 def read_data_from_binary_file has two parameters, objFileData to be read from the binary file and converted into a list object, lstTable at output. 
 Open ‘AppData.data’ , ‘rb’ read binary file. Pickle to load data from the parameter ‘objFile’ to a list object, objFileData and print in lstRows. Then close the binary file.
 
 
 ![image](https://user-images.githubusercontent.com/79126969/110103009-49959300-7d5a-11eb-8239-236fa9461d92.png)
+
 Image 10: Output for def read_data_from_binary_file(objFileData, lsttable)
 
 
 ![image](https://user-images.githubusercontent.com/79126969/110103080-5c0fcc80-7d5a-11eb-90a5-58bf24cbaccf.png)
+
 Image 11: Final Output before exit. The order in which lstData is entered into lstTable needs to be rectified in the script.
 
 # Conclusion
