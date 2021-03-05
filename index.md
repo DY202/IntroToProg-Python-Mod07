@@ -5,11 +5,12 @@ Assignment 7
 
 DY202/IntroToProg-Python-Mod07 (github.com)
 _________________________________________________________________________
-                **Functions, Pickling and Structured Error Handling in Python**
+# Functions, Pickling and Structured Error Handling in Python #
 
 There are two main types of functions in Python:
 
-# Library Functions: Built-in functions in called a Library function. 
+## Library Functions 
+Built-in functions are called Library functions. 
 We don’t have to define these functions to use them; we can directly call them. These functions are called built in functions. The very basic built in function that we have used in almost every module is the print() function which is used to display a given object
 Some Python Built in Functions	
 abs()	returns the absolute value of a number, and the returned value is always positive. 
@@ -26,11 +27,11 @@ staticmethod()	This function creates a static method from a function.
 Import__()	is an advanced function called by ‘import’. 
 To use these built in functions, we have only to call them and pass the relevant argument
 
-# User Defined Functions 
+## User Defined Functions 
 Instead of relying on built-in functions, Python programming language allows us to create our own functions called as user defined functions. For example, if we want to implement some mathematical calculations, then put them in separate functions with the correct function name. Then we can call that function multiple times.
 
 
-# Table 1: File vs Binary File – Difference between Text File and Binary File
+### Table 1: File vs Binary File – Difference between Text File and Binary File
 Text File | Binary File
 ----------|------------
 Bits represent character | Bits represent custom data
@@ -47,16 +48,17 @@ Binary files also store file information like file name, file format, etc., whic
 Since binary files store data in sequential bytes, a small change in the file can corrupt the file and make it unreadable to the supporting application.
 
 ![image](https://user-images.githubusercontent.com/79126969/110100655-814f0b80-7d57-11eb-88cf-8caea76d6d4b.png)
+
 Binary File opened using Notepad
 
-# Pickling and Unpickling
+## Pickling and Unpickling
 Python provides pickle modules for Serialization and de-Serialization of python objects like lists, dictionaries, tuples, etc. Pickling is also called marshaling or flattening in other languages. Pickling is used to store python objects.
-## Serialization or Pickling: 
+### Serialization or Pickling: 
 Pickling or Serialization is the process of converting a Python object (lists, dict, tuples, etc) into byte streams that can be saved to disks or can be transferred over a network.
-## De-serialization or un pickling: 
+### De-serialization or un pickling: 
 The byte streams saved on file contains the necessary information to reconstruct the original python object. The process of converting byte streams back to python objects is called de-serialization.
 
-# What is Exception?
+## What is Exception?
 "Exception" is a built-in python class used to hold information about an error. Python automatically creates an Exception object when an error occurs. The Exception object automatically fills with information about the error that caused the exception. In general, when a Python script encounters a situation that it cannot cope with, it raises an exception. An exception is a Python object that represents an error.
 In Python, all exceptions must be instances of a class that derives from BaseException. In a ‘try’ statement with an ‘except’ clause that mentions a particular class, that clause also handles any exception classes derived from that class.
 
@@ -75,7 +77,7 @@ Raised when an operation or function receives an argument that has the right typ
 Raised when the second argument of a division or modulo operation is zero. The associated value is a string indicating the type of the operands and the operation.
 
 
-## Handling an exception
+### Handling an exception
 You can capture the Exception object in the except section of a try-except block and extract the error messages
 If you have some suspicious code that may raise an exception, you can defend your program by placing the suspicious code in a try: block. After the try: block, include an except: statement, followed by a block of code which handles the problem as elegantly as possible.
 -syntax of try....except...else blocks −
@@ -93,47 +95,20 @@ else:
 An exception can be a string, a class or an object. Most of the exceptions that the Python core raises are classes, with an argument that is an instance of the class.
 Example
 Following is an example for a single exception −
-
-def temp_convert(var):
-try:
-     return int(var)
-except ValueError, Argument:
-      print "The argument does not contain numbers\n", Argument
+![image](https://user-images.githubusercontent.com/79126969/110106528-a2672a80-7d5e-11eb-924c-d6209299cc4d.png)
 
 
-temp_convert("xyz");
-This produces the following result −
-
-The argument does not contain numbers
-invalid literal for int() with base 10: 'xyz'
-
-# "Common base class for all non-exit exceptions." 
+### "Common base class for all non-exit exceptions." 
 This message comes from the Exception class's docstring. It tells that the Exception class is a "base" class that can be used to create "derived" classes. Derived classes "inherit" data and functions from the base class that can be replaced and customized.
 
-This script shows two classes that derive code from the Exception class and replace the"__str__()" functionwith a custom message.
-class CustomError(Exception):
-"""  Some custom error info in the DocString  """
-def __str__(self):
-  return 'Some custom error message'
-class FileNotTXTError
-(Exception):"""  File extension must end with txt to indicate it is a text file  """
-def __str__(self):
-  return 'File extension not txt'
+![image](https://user-images.githubusercontent.com/79126969/110106713-dcd0c780-7d5e-11eb-8f5c-934bfa8877d6.png)
 
-##  Raising an Exception
-You can raise exceptions by using the raise statement. The general syntax for the raise statement is as follows.
-try:
-new_file_name = input("Enter the name of the file you want to make: ")
-if new_file_name.is numeric():
-raise Exception('Do not use numbers for the file\'s name')
-elif new_file_name.ends with('txt') == False:
-raise FileNotTXTError()
-else:
-raise CustomError()
-except Exception as e:
-print("There was a non-specific error!")
-print("Built-In Python error info: ")
-print(e, e.__doc__, type(e), sep='\n')
+
+###  Raising an Exception
+
+![image](https://user-images.githubusercontent.com/79126969/110106824-00940d80-7d5f-11eb-99a3-0953626fb7a8.png)
+
+
 In Python, users can define custom exceptions by creating a new class. This exception class has to be derived, either directly or indirectly, from the built-in Exception class. 
 Two exceptions (ValueTooSmallError and ValueTooLargeError) that are actually raised by the program (below) are derived from a base class called Error, this is the standard way to define user-defined exceptions in Python programming.
 
@@ -141,11 +116,11 @@ Two exceptions (ValueTooSmallError and ValueTooLargeError) that are actually rai
 
 Source: How to Define Custom Exceptions in Python? (With Examples) (programiz.com)
 
-# What is the Markdown language?
+## What is the Markdown language?
 Markdown is a simple syntax that formats text as headers, lists, boldface, and so on. Adding bold, italics, numbered lists, bullet points, headings, and so on to text, you’re “formatting” it. Markdown is a syntax—or, set of rules—that formats text on web pages.
 Traditionally, to format text on web pages, we use Hypertext Markup Language, better known as HTML. HTML is one member of the family of markup languages, along with eXtensible Markup Language (XML) and Standard Generalized Markup Language (SGML).
 
-## How Do You Use Markdown?
+### How Do You Use Markdown?
 To use Markdown, you just apply simple tags to your text. For example, to format text in italics, you put underscores around it like so: _this is some text in italics_.
 Strong (Bold)
 **text**
@@ -154,12 +129,12 @@ Markdown converts both **text** and __text__ to the HTML <strong> tag, which typ
 After you format your text, an application has to convert it to HTML, which is usually done automatically. For example, README files in GitHub use Markdown, and as long as they have a .MD file extension, GitHub automatically converts them to the correct HTML tags when they’re published.
 So, in most cases, you won’t have to do this yourself, but if you do, there’s a Markdown tool available.
 
-## Where Can You Use Markdown?
+### Where Can You Use Markdown?
 As we mentioned above, you can use Markdown on GitHub, but also on Reddit, StackOverflow, and other websites. If you’ve ever formatted text in WhatsApp messages or Slack conversations, you’ve already used it because these applications use a (very small) subset of Markdown tags to format text. 
 Markdown is a way to style text on the web. You control the display of the document; formatting words as bold or italic, adding images, and creating lists are just a few of the things we can do with Markdown. Mostly, Markdown is just regular text with a few non-alphabetic characters thrown in, like # or *.
 
 
-## Syntax guide
+### Syntax guide
 Here’s an overview of Markdown syntax that you can use anywhere on GitHub.com or in your own text files.
 Headers
 # This is an <h1> tag
@@ -236,8 +211,8 @@ Any word wrapped with two tildes (like ~~this~~) will appear crossed out.
 Emoji
 GitHub supports emoji!
 
-# Title: Lab7-1
-# Description: A simple example of storing data in a binary file
+### Title: Lab7-1
+### Description: A simple example of storing data in a binary file
 
 ![image](https://user-images.githubusercontent.com/79126969/110102118-3afaac00-7d59-11eb-8bb4-58bb6c77c75b.png)
 
@@ -277,8 +252,8 @@ Image 2: Output for def save_data_to_file(lstTable, file)
 ![image](https://user-images.githubusercontent.com/79126969/110102444-a3e22400-7d59-11eb-86a8-cf46dd4bf2ac.png)
 
 Image 3; Data saved in the text file ‘AppData.txt’
-
 ![image](https://user-images.githubusercontent.com/79126969/110102481-b2304000-7d59-11eb-8e67-841ddb3c0efe.png)
+
 
 def read_data_from_file(file, lstTable) opens the text file. File Data, on reading lines, for each line in file, print into a list Row, value at [0] first, followed by value at [1].
 Print all file data in lstRows and close the file.
@@ -291,7 +266,7 @@ Image 4: Output for def read_data_from_file(file,lstTable)
 
 ![image](https://user-images.githubusercontent.com/79126969/110102567-cc6a1e00-7d59-11eb-91f2-d6cdcd18fa36.png)
 
-Function def add_new_data with two parameters, strID and strName obtains user input for an ID followed by a Name. The input is displayed in a lstRow and the lstRow appended to the lstTable to print.
+Function def add_new_data with two parameters, strID and strName obtains user input for an ID followed by a Name. The output is displayed in a lstRow and the lstRow appended to the lstTable to print.
 
 
 ![image](https://user-images.githubusercontent.com/79126969/110102667-ec99dd00-7d59-11eb-9355-97a5f0f097d9.png)
