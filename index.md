@@ -5,9 +5,9 @@ Assignment 7
 
 DY202/IntroToProg-Python-Mod07 (github.com)
 _________________________________________________________________________
-## FUNCTIONS ,PICKLING FUNCTIONS ,PICKLING & STRUCTURED ERROR HANDLING IN PYTHON
 
-# IntroToProg-Python-Mod07
+
+## IntroToProg-Python-Mod07
 
 ## FUNCTIONS, PICKLING AND STRUCTURED ERROR HANDLING IN PYTHON 
 
