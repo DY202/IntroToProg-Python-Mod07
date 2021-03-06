@@ -285,19 +285,19 @@ While mostly successful, the script needs more work in placing lstRows in the or
 
 
 ## Sources
-1. What are the Benefits and Limitations of Using Python? | edu CBA 
-2. Built-in Functions — Python 3.9.2 documentation 
-3. Built in Function in Python with Examples - Intellipaat 
-4. Exception Handling in Python - PythonForBeginners.com 
+1.  What are the Benefits and Limitations of Using Python? | edu CBA 
+2.  Built-in Functions — Python 3.9.2 documentation 
+3.  Built in Function in Python with Examples - Intellipaat 
+4.  Exception Handling in Python - PythonForBeginners.com 
 5. (Tutorial) Exception and Error Handling in Python - DataCamp 
-6. Difference between Text File and Binary File - The Crazy Programmer 
-7. What are binary and text files? (nayuki.io) 
-8. Python - Exceptions Handling - Tutorialspoint 
-9. How to Define Custom Exceptions in Python? (With Examples) (programiz.com) 
-10.What Is Markdown and How Do You Use It? (howtogeek.com) 
-11.Mastering Markdown · GitHub Guides 
-12.Module 7 Programming Notes
-13.https://www.youtube.com/watch?v=PKh-1cUVHcw&ab_channel=Ugotsta How to edit GitHub Pages
+6.  Difference between Text File and Binary File - The Crazy Programmer 
+7.  What are binary and text files? (nayuki.io) 
+8.  Python - Exceptions Handling - Tutorialspoint 
+9.  How to Define Custom Exceptions in Python? (With Examples) (programiz.com) 
+10. What Is Markdown and How Do You Use It? (howtogeek.com) 
+11. Mastering Markdown · GitHub Guides 
+12. Module 7 Programming Notes
+13. https://www.youtube.com/watch?v=PKh-1cUVHcw&ab_channel=Ugotsta How to edit GitHub Pages
 
 
 
