@@ -68,7 +68,7 @@ Python provides pickle modules for Serialization and de-Serialization of python 
 ### Serialization or Pickling
 Pickling or Serialization is the process of converting a Python object (lists, dict, tuples, etc) into byte streams that can be saved to disks or can be transferred over a network.
 
-### De-serialization or un pickling
+### De-serialization or Un Pickling
 The byte streams saved on file contains the necessary information to reconstruct the original python object. The process of converting byte streams back to python objects is called de-serialization.
 
 
