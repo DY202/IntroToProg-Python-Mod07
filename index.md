@@ -13,8 +13,8 @@ _________________________________________________________________________
 
 
 There are two main types of functions in Python:
-### Built-in functions are called Library functions. 
-We don’t have to define these functions to use them; we can directly call them. These functions are called built in functions. The very basic built in function that we have used in almost every module is the print() function which is used to display a given object. 
+### Built-in functions 
+They are referred to as Library functions. We don’t have to define these functions to use them; we can directly call them. These functions are called built in functions. The very basic built in function that we have used in almost every module is the print() function which is used to display a given object. 
 
 #### Some Python Built in Functions 
 - abs() returns the absolute value of a number, and the returned value is always positive. 
@@ -37,15 +37,20 @@ Instead of relying on built-in functions, Python programming language allows us 
 
 
 ## Table 1: Difference between Text Files and Binary Files
-Text File | Binary File
------------|------------ 
-Bits represent character | Bits represent custom data 
-Can only store plain text | Can store different types of data(image, audio, text) in a single file 
-Widely used file format , opened using simple text editor | Developed especially for an application and may not be understood by other applications 
-Most .txt and .rtf are used as extensions to text files | Can have any application defined extension 
-Less prone to get corrupt as changes reflect as soon as the file is opened and can easily be undone | Can easily get corrupted, even a single bit change may corrupt the file.
+#### Text File
+- Bits represent character
+- Can only store plain text
+- Widely used file format , opened using simple text editor
+- Most .txt and .rtf are used as extensions to text files
+- Less prone to get corrupt as changes reflect as soon as the file is opened and can easily be undone 
 
-### Binary Files
+#### Binary File
+- Bits represent custom data 
+- Can store different types of data(image, audio, text) in a single file 
+- Developed especially for an application and may not be understood by other applications 
+- Can have any application defined extension 
+- Can easily get corrupted, even a single bit change may corrupt the file.
+
 Binary file are files that store data in the form of sequence of bytes grouped into eight bits or sometimes sixteen bits. These bits represent custom data and such files can store multiple types of data (images, audio, text, etc) under a single file. Binary file can have custom file formats and the developer, who designs these custom file formats, converts the information, to be stored, in bits and arranges these bits in binary file so that they are well understood by the supporting application and when needed, can easily be read by the supporting application. 
 
 One example of binary file is image file is .PNG or .JPG. If one tries open these files using a text editor then, he/she may get unrecognizable characters, but when opened using the supporting image viewer, the file will be shown as a single image. This is because the file is in binary format and contains data in the form of sequence of bytes.
